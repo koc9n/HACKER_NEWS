@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    ul.list-group
+        each val in news.length ? news : ['There are no news']
+            li.list-group-item
+                div.row
+                    div.col-xs-9
+                        a(href=val.url target="_blank")= val.title
+                        span.author= " - " + val.author + " - "
+                    -   function getPrettyTimeInterval (publishedAt) {
+                    -       var daysDiff = moment().diff(moment(publishedAt),"days");
+                    -       return daysDiff == 0 ? moment(publishedAt).format("LT") : daysDiff == 1 ? "Yesterday" : daysDiff + " days ago";
+                    -   };
+                    div.col-xs-2.time= getPrettyTimeInterval(val.publishedAt)
+                    div.col-xs-1.trash
+                        a.glyphicon.glyphicon-trash(href="/news/" + val.id + "/delete")
+

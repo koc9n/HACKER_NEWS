@@ -1,0 +1,28 @@
+{
+  "name": "HACKER_NEWS",
+  "description": "HN feed",
+  "main": "",
+  "authors": [
+    "koc9n <kos.mironchik@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "test",
+    "hn",
+    "hacker",
+    "news",
+    "feed"
+  ],
+  "homepage": "README",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

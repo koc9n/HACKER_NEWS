@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/css/main.css')
+        link(rel='stylesheet', href='/bower/bootstrap/dist/css/bootstrap.css')
+        script(src='/bower/jquery/dist/jquery.js')
+    body
+        header.navbar-inverse
+                div.navbar-header
+                    div.logo
+                        h1 HN Feed
+                        span We <3 hacker news
+        section.container-fluid
+            block content
