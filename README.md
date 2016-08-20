@@ -19,3 +19,4 @@ Have scheduler to update news.
 `$ bower install `
 9. Run project  
 `$ npm start`
+10. Open in your browser `localhost:3000`
